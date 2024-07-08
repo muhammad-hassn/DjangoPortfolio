@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Matrix Operations</title>
+</head>
+<body>
+    <h1>Matrix Operations</h1>
+    <h3>For 2x2</h3>
+<p>
+2. . 3 <br>
+4. . 5
+</p>
+<h3>For 3x3</h3>
+<p>
+    2. .3. .4 <br> 
+    1. .3. .4 <br>
+    1. .3. .5
+</p>
+
+
+    <form method="post">
+        {% csrf_token %}
+        <label for="size_a">Enter size of Matrix A:[2x2] [3x3]</label>
+        <input type="number" id="size_a" name="size_a" required><br><br>
+        <label for="matrix_a">Enter elements of Matrix A (separated by space):</label>
+        <textarea id="matrix_a" name="matrix_a" required></textarea><br><br>
+        <label for="size_b">Enter size of Matrix B:[2x2][3x3]</label>
+        <input type="number" id="size_b" name="size_b" required><br><br>
+        <label for="matrix_b">Enter elements of Matrix B (separated by space):</label>
+        <textarea id="matrix_b" name="matrix_b" required></textarea><br><br>
+        <button type="submit">Submit</button>
+    </form>
+  
+</body>
+</html>

@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <title>{% block title %}
+        
+    {% endblock title %} | Hassan Portfolio</title>
+  </head>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+    }
+    body {
+      background-color: rgb(0, 0, 33);
+      color: white;
+      font-family: "Roboto", sans-serif;
+    }
+    nav {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      height: 92px;
+      background-color: rgb(3, 3, 63);
+    }
+    nav ul {
+      display: flex;
+      justify-content: center;
+    }
+    nav ul li {
+      list-style: none;
+      margin: 0 23px;
+    }
+    nav ul li a {
+      text-decoration: none;
+      color: white;
+    }
+    nav ul li a:hover {
+      color: rgb(183, 183, 228);
+      font-size: 1.05rem;
+    }
+
+    .leftSection {
+      font-size: 1.7rem;
+      color: white;
+    }
+    .firstSection {
+      display: flex;
+      justify-content: space-around;
+
+      align-items: center;
+    }
+    .firstSection > div {
+      width: 30%;
+    }
+    .left {
+      font-size: 3rem;
+      margin: 50px;
+    }
+    
+    .purple {
+      color: rgb(161, 98, 219);
+    }
+    #element {
+      color: rgb(161, 98, 219);
+    }
+    .btn1 {
+      background-color: rgb(130, 51, 204);
+      padding: 12px;
+      border-radius: 5px;
+      color: whitesmoke;
+      font-size: 1rem;
+    }
+
+    .btn1:hover {
+      background-color: rgb(126, 30, 216);
+      cursor: pointer;
+    }
+    .btn1 a {
+      text-decoration: none;
+      color: whitesmoke;
+    }
+    .btn2 a {
+      text-decoration: none;
+      color: whitesmoke;
+    }
+    .btn2 {
+      background-color: black;
+      padding: 12px;
+      border-radius: 5px;
+      color: whitesmoke;
+      font-size: 1rem;
+    }
+    .btn2:hover {
+      background-color: rgb(10, 10, 10);
+      cursor: pointer;
+    }
+    footer {
+      background-color: rgb(20, 20, 20);
+    }
+    .Name {
+      font-size: 2rem;
+      margin: 0 23px 15px;
+      display: inline-block;
+      color: whitesmoke;
+    }
+    .pera {
+      width: 60%;
+      text-align: center;
+      margin: 0 23px;
+    }
+    .main1 {
+      display: flex;
+      padding-top: 50px;
+    }
+    .importantlink {
+      width: 19%;
+    }
+    .name1 {
+      display: inline-block;
+      width: 30%;
+    }
+    .importantlink ul li {
+      list-style: none;
+      padding: 9px;
+    }
+    .importantlink ul li a {
+      text-decoration: none;
+      color: whitesmoke;
+    }
+    .contact_info {
+      width: 25%;
+    }
+    .contact_info ul li {
+      list-style: none;
+      padding: 9px;
+    }
+    .social_link ul li {
+      list-style: none;
+      padding: 5px;
+    }
+    .title {
+      font-size: 1.5rem;
+    }
+    .social_link ul li a {
+      text-decoration: none;
+      color: whitesmoke;
+    }
+    .title{
+      color: whitesmoke;
+    }
+  </style>
+  <body>
+    <header>
+      <nav>
+        <div class="leftSection">Hassan's PortFolio</div>
+        <div class="rightSection">
+          <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="/about">About</a></li>
+            <li><a href="/Project">Projects</a></li>
+            <li><a href="/contact">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    {% block main %}
+        
+    {% endblock main %}
+    <footer>
+      <div class="main1">
+        <div class="name1">
+          <div class="Name">Muhammad Hassan</div>
+          <div class="pera">
+            A Python Developer from Karachi, Pakistan. I always make Programme
+            Unique Simple and also has a good performance rate.
+          </div>
+        </div>
+        <div class="importantlink">
+          <div class="title">Important Links</div>
+          <ul>
+            <li><a href="/"> Home</a></li>
+            <li><a href="/Project"> project</a></li>
+            <li><a href="/about"> About</a></li>
+          </ul>
+        </div>
+        <div class="contact_info">
+          <div class="title">Contact Info</div>
+          <ul>
+            <li>+92 3408 062138</li>
+            <li>muhammadhasssanmh4080@gmail.com</li>
+          </ul>
+        </div>
+        <div class="social_link">
+          <div class="title">Social Links</div>
+          <ul>
+            <li><a href="https://github.com/muhammad-hassn">GitHub</a></li>
+            <li>
+              <a href="www.linkedin.com/in/muhammad-hassan-1665742a6"
+                >LinkedIn</a
+              >
+            </li>
+            <li>
+              <a href="https://www.facebook.com/profile.php?id=100040928591915"
+                >Facebook</a
+              >
+            </li>
+            <li>
+              <a href="https://www.instagram.com/_md.hassan__/?next=%2F&hl=en"
+                >Instagram</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+    <!-- <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+<script>
+        var typed = new Typed('#element', {
+          strings: ['Python Programmer',],
+          typeSpeed: 50,
+        });
+      </script> -->
+  </body>
+</html>

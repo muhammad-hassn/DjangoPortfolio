@@ -1,0 +1,177 @@
+{% extends 'base.html' %}
+
+{% block title %}
+    Projects
+{% endblock title %}
+
+{% block main %} 
+<script>
+  function showCalculator(){
+    window.location.href = "{% url 'calculator' %}";
+    
+  }
+  function showconverter(){
+    window.location.href = "{% url 'Converter' %}";
+    
+  }
+
+function showtemp_converter(){
+  window.location.href = "{% url 'temp_Convert' %}";  
+  }
+  
+  function showrun_code(){
+    window.location.href = "{% url 'run_code' %}";  
+    }
+
+  function showsalary(){
+    window.location.href = "{% url 'Company' %}";  
+    }
+  function showgame(){
+    window.location.href = "{% url 'guess_game' %}";  
+    }
+    
+</script>
+<style>
+.pro1{
+        padding: 30px;
+        padding-right: 800px;
+        font-size: 1.5rem;
+        margin: 0 40px;
+        margin-top: 10px;
+      }
+      .pro2{
+        padding: 30px;
+        padding-right: 786px;
+        font-size: 1.5rem;
+        margin: 0 40px;
+        margin-top: 10px;
+      }
+      .pro3{
+        padding: 30px;
+        padding-right: 750px;
+        font-size: 1.5rem;
+        margin: 0 40px;
+        margin-top: 10px;
+      }
+      .pro4{
+        padding: 30px;
+        padding-right: 603px;
+        font-size: 1.5rem;
+        margin: 0 40px;
+        margin-top: 10px;
+      }
+      .pro5{
+        padding: 30px;
+        padding-right: 695px;
+        font-size: 1.5rem;
+        margin: 0 40px;
+        margin-top: 10px;
+      }
+      .pro6{
+        padding: 30px;
+        padding-right: 560px;
+        font-size: 1.5rem;
+        margin: 0 40px;
+        margin-top: 10px;
+      }
+      .pro01{
+        padding: 30px;
+        padding-right: 180px;
+        font-size: 1.5rem;
+        margin: 0 40px;
+        margin-top: 10px;
+      }
+      .pro02{
+        padding: 30px;
+        padding-right: 720px;
+        font-size: 1.5rem;
+        margin: 0 40px;
+        margin-top: 10px;
+      }
+      .prjectName{
+        font-size: 1.8rem;
+        text-align:center;
+        margin: 25px 0 ;
+      }
+      .pro1:hover{
+        background-color: rgb(121, 121, 197);
+        color: whitesmoke;
+        transition: 0.2s;
+      }
+      .pro2:hover{
+        background-color: rgb(121, 121, 197);
+        color: whitesmoke;
+        transition: 0.2s;
+      }
+      .pro3:hover{
+        background-color: rgb(121, 121, 197);
+        color: whitesmoke;
+        transition: 0.2s;
+      }
+      .pro02:hover{
+        background-color: rgb(121, 121, 197);
+        color: whitesmoke;
+        transition: 0.2s;
+      }
+      .pro4:hover{
+        background-color: rgb(121, 121, 197);
+        color: whitesmoke;
+        transition: 0.2s;
+      }
+      .pro01:hover{
+        background-color: rgb(121, 121, 197);
+        color: whitesmoke;
+        transition: 0.2s;
+      }
+      .pro5:hover{
+        background-color: rgb(121, 121, 197);
+        color: whitesmoke;
+        transition: 0.2s;
+      }
+      .pro6:hover{
+        background-color: rgb(121, 121, 197);
+        color: whitesmoke;
+        transition: 0.2s;
+      }
+      .projects{
+        padding-bottom: 20px;
+      }
+      p{
+        font-size: large;
+        display: flex;
+        color: rgb(91, 91, 196);
+      }
+</style>
+
+<main>
+    <section id="projects">
+      <div class="prjectName">Python-Projects</div>
+      <div class="project">
+        <button class="pro02" onclick="showgame()">Project 01 : Number Guessing Game</button>
+          </div>
+      <div class="project">
+        <a><button class="pro01" onclick="showsalary()">Project 02 : Ask user for their salary and year of service and print the net bonus amount.</button></a>
+          </div>
+      <div class="project">
+        <a><button class="pro1" onclick="showCalculator()">Project 03 : Simple Calculator</button></a>
+          </div>
+      <div class="project">
+        <a><button class="pro2" onclick="showconverter()">Project 04 :Currency Converter </button></a>
+      </div>
+      <div class="project">
+        <a><button class="pro3" onclick="showtemp_converter()">Project 05 :Temperature Converter </button></a>
+      </div>
+      <div class="project">
+        <a><button class="pro4" onclick="showrun_code()">Project 06: Numpy Project Least Square Method</button></a>
+      </div>
+      <div class="project">
+        <a href="https://github.com/muhammad-hassn/Python-Projects/blob/main/If%20and%20Else%20Project.ipynb"><button class="pro5">Project 07: If and Else  Practice Problem <p>Github Link</p></button></a>
+      </div>
+      <div class="project">
+        <a href="https://github.com/muhammad-hassn/Python-Projects/blob/main/(List%20-%20Dictionary%20-%20Loop).ipynb"><button class="pro6">Project 08: Project Of( List, Dictionary, Loops, if-else) <p>Github Link</p></button></a>
+      </div>
+  </section><br><br>
+  </main>
+
+
+{% endblock main %}

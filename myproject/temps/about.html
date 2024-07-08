@@ -1,0 +1,57 @@
+{% extends 'base.html' %}
+
+{% block title %}
+    About
+{% endblock title %}
+
+{% block main %}
+
+<main>
+    <style>
+         .main {
+        display: flex;
+      }
+      .per {
+        display: inline-block;
+        justify-content: center;
+        width: 47%;
+        text-align: center;
+        margin: 77px 157px;
+        font-size: 1.7rem;
+      }
+
+      .poc {
+        width: 33%;
+        margin: 77px 157px;
+        border-color: black;
+      }
+    .tech{
+      color:rgb(129, 129, 206);
+    }
+    .purple{
+      color: rgb(129, 129, 206);
+    }
+    </style>
+  <div class="main">
+    <div class="poc">
+        <img src="/static/img/hassan1.jpg" style="width: 400px; height: 600px; border-radius: 100%;" alt="png">
+    </div>
+    <div class="per">
+      Hello! I'm Muhammad Hassan, an aspiring IT professional with a passion
+      for technology and problem-solving.I am a <span class="purple">Front-End Developer</span> using
+      <span class="purple">TypeScript</span> and <span class="purple">Python Programming</span>. Welcome to my personal page where I
+      share my journey and experiences as I navigate the exciting world of
+      Information Technology. I recently started my journey in the IT field
+      by enrolling in a Bachelor’s program in Information Technology at
+      <div class="tech">Karachi Institute of Economics and Technology.</div> Growing up in Orangi
+      Town, I was always fascinated by computers and how they work.
+      Currently Study in <div class="purple">Presidential Initiative for Artificial Intelligence
+        and Computing (PIAIC).</div> Thank you for visiting my page and taking the
+      time to get to know me. I look forward to connecting with you!
+    </div>
+  </div>
+</main>
+
+
+
+{% endblock main  %}
